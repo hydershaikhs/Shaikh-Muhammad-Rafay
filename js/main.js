@@ -207,11 +207,6 @@ function initContactForm() {
         feedback.innerHTML = `
           <strong><i class="fa-solid fa-circle-check"></i> Thank you, ${name}!</strong><br>
           Your project inquiry has been received. Shaikh Muhammad Rafay will reply to <em>${email}</em> promptly!
-          <div style="margin-top: 0.65rem;">
-            <a href="https://api.whatsapp.com/send/?phone=923111267926&text=${encodeURIComponent('Hi Shaikh Muhammad Rafay, I submitted a project request regarding ' + subject + ': ' + message)}" target="_blank" class="btn btn-secondary btn-sm" style="margin-top: 0.35rem; display: inline-flex;">
-              <i class="fa-brands fa-whatsapp"></i> Also chat directly on WhatsApp
-            </a>
-          </div>
         `;
       }
       form.reset();

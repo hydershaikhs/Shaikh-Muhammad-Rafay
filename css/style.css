@@ -1297,10 +1297,6 @@ button, input, textarea, select {
   transform: scale(1.06);
 }
 
-.whatsapp-icon { color: #10b981; }
-.facebook-icon { color: #1877f2; }
-.instagram-icon { color: #e1306c; }
-.linkedin-icon { color: #0a66c2; }
 .email-icon { color: var(--accent-primary); }
 
 .contact-link-text {
