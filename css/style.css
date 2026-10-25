@@ -471,6 +471,7 @@ button, input, textarea, select {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: -3rem; /* Lifted image card higher */
 }
 
 .profile-card-wrapper {
@@ -486,7 +487,7 @@ button, input, textarea, select {
 }
 
 .profile-card-wrapper:hover {
-  transform: translateY(-6px);
+  transform: translateY(-8px);
   box-shadow: 0 28px 55px rgba(79, 70, 229, 0.18), 0 8px 24px rgba(0, 0, 0, 0.06);
   border-color: rgba(2, 132, 199, 0.45);
 }
@@ -506,7 +507,7 @@ button, input, textarea, select {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center 10%;
+  object-position: center 0%; /* Lifted portrait photo higher to frame face perfectly */
   display: block;
   transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
 }
@@ -1246,6 +1247,9 @@ button, input, textarea, select {
     grid-template-columns: 1fr;
     text-align: center;
     gap: 3rem;
+  }
+  .hero-visual {
+    margin-top: -0.5rem;
   }
   .hero-bio {
     margin-left: auto;
