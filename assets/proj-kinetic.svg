@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="gradKin" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#140a24"/>
+      <stop offset="100%" stop-color="#24103c"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#gradKin)"/>
+  
+  <g transform="translate(100, 90)">
+    <rect width="600" height="320" rx="18" fill="#180e2b" stroke="rgba(99,102,241,0.5)" stroke-width="2"/>
+    <text x="300" y="65" fill="#a855f7" font-family="'Outfit', sans-serif" font-weight="700" font-size="28" text-anchor="middle">Viral Social Reels &amp; Kinetic Captions</text>
+    <text x="300" y="100" fill="#cbd5e1" font-family="'Plus Jakarta Sans', sans-serif" font-size="16" text-anchor="middle">Hook Optimization • Fast Cuts • Audio Whooshes &amp; SFX</text>
+
+    <!-- Kinetic Typography Graphic -->
+    <g transform="translate(140, 130)">
+      <rect x="0" y="0" width="320" height="45" rx="10" fill="#4f46e5"/>
+      <text x="160" y="30" fill="#fff" font-family="'Outfit', sans-serif" font-weight="800" font-size="20" text-anchor="middle">HOOK THE AUDIENCE IN 3 SEC</text>
+
+      <rect x="30" y="55" width="260" height="40" rx="8" fill="#38bdf8"/>
+      <text x="160" y="82" fill="#07080d" font-family="'Outfit', sans-serif" font-weight="800" font-size="18" text-anchor="middle">DYNAMIC ZOOM &amp; SFX</text>
+
+      <rect x="60" y="105" width="200" height="35" rx="8" fill="#a855f7"/>
+      <text x="160" y="128" fill="#fff" font-family="'Outfit', sans-serif" font-weight="700" font-size="16" text-anchor="middle">85%+ RETENTION RATE</text>
+    </g>
+  </g>
+</svg>

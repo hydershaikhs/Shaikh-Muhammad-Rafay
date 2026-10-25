@@ -7,7 +7,6 @@ document.addEventListener("DOMContentLoaded", () => {
   initActiveNavOnScroll();
   initStatCounters();
   initSkillsProgress();
-  initTestimonialsSlider();
   initProjectLightbox();
   initContactForm();
 });
@@ -137,67 +136,6 @@ function initSkillsProgress() {
   skillFills.forEach(bar => observer.observe(bar));
 }
 
-/* --- Testimonials Slider --- */
-function initTestimonialsSlider() {
-  const cards = document.querySelectorAll(".testimonial-card");
-  const dots = document.querySelectorAll(".slider-dot");
-  const prevBtn = document.querySelector(".slider-btn-prev");
-  const nextBtn = document.querySelector(".slider-btn-next");
-  if (!cards.length) return;
-
-  let currentIndex = 0;
-  let autoplayTimer = null;
-
-  function showSlide(index) {
-    cards.forEach((card, i) => {
-      card.classList.toggle("active", i === index);
-    });
-    dots.forEach((dot, i) => {
-      dot.classList.toggle("active", i === index);
-    });
-    currentIndex = index;
-  }
-
-  function nextSlide() {
-    let nextIndex = (currentIndex + 1) % cards.length;
-    showSlide(nextIndex);
-  }
-
-  function prevSlide() {
-    let prevIndex = (currentIndex - 1 + cards.length) % cards.length;
-    showSlide(prevIndex);
-  }
-
-  nextBtn?.addEventListener("click", () => {
-    nextSlide();
-    resetAutoplay();
-  });
-
-  prevBtn?.addEventListener("click", () => {
-    prevSlide();
-    resetAutoplay();
-  });
-
-  dots.forEach(dot => {
-    dot.addEventListener("click", () => {
-      const idx = parseInt(dot.getAttribute("data-index"), 10);
-      showSlide(idx);
-      resetAutoplay();
-    });
-  });
-
-  function startAutoplay() {
-    autoplayTimer = setInterval(nextSlide, 5500);
-  }
-
-  function resetAutoplay() {
-    clearInterval(autoplayTimer);
-    startAutoplay();
-  }
-
-  startAutoplay();
-}
-
 /* --- Project Lightbox --- */
 function initProjectLightbox() {
   const lightbox = document.getElementById("portfolio-lightbox");
@@ -268,9 +206,9 @@ function initContactForm() {
         feedback.style.display = "block";
         feedback.innerHTML = `
           <strong><i class="fa-solid fa-circle-check"></i> Thank you, ${name}!</strong><br>
-          Your message has been received. Abdul Rafay will reply to <em>${email}</em> promptly!
+          Your project inquiry has been received. Abdul Rafay will reply to <em>${email}</em> promptly!
           <div style="margin-top: 0.65rem;">
-            <a href="https://wa.me/923111267926?text=${encodeURIComponent('Hi Abdul Rafay, I just submitted the contact form regarding ' + subject + ': ' + message)}" target="_blank" class="btn btn-secondary btn-sm" style="margin-top: 0.35rem; display: inline-flex;">
+            <a href="https://api.whatsapp.com/send/?phone=923111267926&text=${encodeURIComponent('Hi Abdul Rafay, I submitted a project request regarding ' + subject + ': ' + message)}" target="_blank" class="btn btn-secondary btn-sm" style="margin-top: 0.35rem; display: inline-flex;">
               <i class="fa-brands fa-whatsapp"></i> Also chat directly on WhatsApp
             </a>
           </div>
