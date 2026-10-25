@@ -5,9 +5,11 @@
 document.addEventListener("DOMContentLoaded", () => {
   initNavbar();
   initActiveNavOnScroll();
+  initStatCounters();
+  initSkillsProgress();
+  initTestimonialsSlider();
   initProjectLightbox();
   initContactForm();
-  initStatCounters();
 });
 
 /* --- Navbar Scroll & Mobile Menu --- */
@@ -39,7 +41,6 @@ function initNavbar() {
       }
     });
 
-    // Close menu when clicking on any anchor
     navLinks.querySelectorAll("a").forEach(link => {
       link.addEventListener("click", () => {
         navLinks.classList.remove("active");
@@ -53,14 +54,14 @@ function initNavbar() {
   }
 }
 
-/* --- Active Nav Item on Scroll --- */
+/* --- Active Nav Link on Scroll --- */
 function initActiveNavOnScroll() {
   const sections = document.querySelectorAll("section[id]");
   const navLinks = document.querySelectorAll(".nav-link");
 
   window.addEventListener("scroll", () => {
     let currentId = "";
-    const scrollPos = window.scrollY + 120;
+    const scrollPos = window.scrollY + 130;
 
     sections.forEach(sec => {
       const top = sec.offsetTop;
@@ -79,24 +80,145 @@ function initActiveNavOnScroll() {
   });
 }
 
-/* --- Lightbox for Featured Projects --- */
+/* --- Stat Counters Animation --- */
+function initStatCounters() {
+  const statNumbers = document.querySelectorAll(".stat-number[data-target]");
+  if (!statNumbers.length) return;
+
+  const observer = new IntersectionObserver((entries, obs) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const el = entry.target;
+        const target = parseFloat(el.getAttribute("data-target")) || 0;
+        const isDecimal = target % 1 !== 0;
+        const duration = 1500;
+        const startTime = performance.now();
+
+        function update(currentTime) {
+          const elapsed = currentTime - startTime;
+          const progress = Math.min(elapsed / duration, 1);
+          const easeProgress = 1 - Math.pow(1 - progress, 3);
+          const currentVal = easeProgress * target;
+
+          el.textContent = isDecimal ? currentVal.toFixed(1) : Math.floor(currentVal);
+
+          if (progress < 1) {
+            requestAnimationFrame(update);
+          } else {
+            el.textContent = isDecimal ? target.toFixed(1) : target;
+          }
+        }
+
+        requestAnimationFrame(update);
+        obs.unobserve(el);
+      }
+    });
+  }, { threshold: 0.4 });
+
+  statNumbers.forEach(num => observer.observe(num));
+}
+
+/* --- Skills Progress Fill --- */
+function initSkillsProgress() {
+  const skillFills = document.querySelectorAll(".skill-fill[data-level]");
+  if (!skillFills.length) return;
+
+  const observer = new IntersectionObserver((entries, obs) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const bar = entry.target;
+        const level = bar.getAttribute("data-level") || "0";
+        bar.style.width = level + "%";
+        obs.unobserve(bar);
+      }
+    });
+  }, { threshold: 0.3 });
+
+  skillFills.forEach(bar => observer.observe(bar));
+}
+
+/* --- Testimonials Slider --- */
+function initTestimonialsSlider() {
+  const cards = document.querySelectorAll(".testimonial-card");
+  const dots = document.querySelectorAll(".slider-dot");
+  const prevBtn = document.querySelector(".slider-btn-prev");
+  const nextBtn = document.querySelector(".slider-btn-next");
+  if (!cards.length) return;
+
+  let currentIndex = 0;
+  let autoplayTimer = null;
+
+  function showSlide(index) {
+    cards.forEach((card, i) => {
+      card.classList.toggle("active", i === index);
+    });
+    dots.forEach((dot, i) => {
+      dot.classList.toggle("active", i === index);
+    });
+    currentIndex = index;
+  }
+
+  function nextSlide() {
+    let nextIndex = (currentIndex + 1) % cards.length;
+    showSlide(nextIndex);
+  }
+
+  function prevSlide() {
+    let prevIndex = (currentIndex - 1 + cards.length) % cards.length;
+    showSlide(prevIndex);
+  }
+
+  nextBtn?.addEventListener("click", () => {
+    nextSlide();
+    resetAutoplay();
+  });
+
+  prevBtn?.addEventListener("click", () => {
+    prevSlide();
+    resetAutoplay();
+  });
+
+  dots.forEach(dot => {
+    dot.addEventListener("click", () => {
+      const idx = parseInt(dot.getAttribute("data-index"), 10);
+      showSlide(idx);
+      resetAutoplay();
+    });
+  });
+
+  function startAutoplay() {
+    autoplayTimer = setInterval(nextSlide, 5500);
+  }
+
+  function resetAutoplay() {
+    clearInterval(autoplayTimer);
+    startAutoplay();
+  }
+
+  startAutoplay();
+}
+
+/* --- Project Lightbox --- */
 function initProjectLightbox() {
-  const lightbox = document.getElementById("project-lightbox");
+  const lightbox = document.getElementById("portfolio-lightbox");
   const lightboxImg = document.getElementById("lightbox-img");
   const lightboxTitle = document.getElementById("lightbox-title");
-  const lightboxBrand = document.getElementById("lightbox-brand");
+  const lightboxDesc = document.getElementById("lightbox-desc");
+  const lightboxTag = document.getElementById("lightbox-tag");
   const closeBtn = document.querySelector(".lightbox-close");
-  const projectCards = document.querySelectorAll(".project-item-card");
+  const projectCards = document.querySelectorAll(".project-card");
 
   projectCards.forEach(card => {
     card.addEventListener("click", () => {
-      const title = card.getAttribute("data-title");
-      const brand = card.getAttribute("data-brand");
-      const img = card.querySelector("img")?.src;
+      const title = card.getAttribute("data-title") || "";
+      const desc = card.getAttribute("data-desc") || "";
+      const tag = card.getAttribute("data-tag") || "";
+      const img = card.querySelector("img")?.src || "";
 
-      if (lightboxImg) lightboxImg.src = img || "";
-      if (lightboxTitle) lightboxTitle.textContent = title || "";
-      if (lightboxBrand) lightboxBrand.textContent = brand || "";
+      if (lightboxImg) lightboxImg.src = img;
+      if (lightboxTitle) lightboxTitle.textContent = title;
+      if (lightboxDesc) lightboxDesc.textContent = desc;
+      if (lightboxTag) lightboxTag.textContent = tag;
 
       lightbox?.classList.add("active");
       document.body.style.overflow = "hidden";
@@ -122,79 +244,43 @@ function initProjectLightbox() {
 
 /* --- Contact Form Handling --- */
 function initContactForm() {
-  const form = document.getElementById("portfolio-contact-form");
-  const alert = document.getElementById("form-alert");
+  const form = document.getElementById("contact-form");
+  const feedback = document.getElementById("form-feedback");
   if (!form) return;
 
   form.addEventListener("submit", (e) => {
     e.preventDefault();
-    const name = form.querySelector("#user-name")?.value.trim() || "";
-    const email = form.querySelector("#user-email")?.value.trim() || "";
-    const message = form.querySelector("#user-message")?.value.trim() || "";
-    const btn = form.querySelector("button[type='submit']");
-    const orig = btn ? btn.innerHTML : "Send Message";
+    const name = form.querySelector("#sender-name")?.value.trim() || "";
+    const email = form.querySelector("#sender-email")?.value.trim() || "";
+    const subject = form.querySelector("#project-type")?.value || "Inquiry";
+    const message = form.querySelector("#sender-message")?.value.trim() || "";
 
-    if (btn) {
-      btn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> Sending...';
-      btn.disabled = true;
+    const submitBtn = form.querySelector("button[type='submit']");
+    const origText = submitBtn ? submitBtn.innerHTML : "Send Message";
+
+    if (submitBtn) {
+      submitBtn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> Sending message...';
+      submitBtn.disabled = true;
     }
 
     setTimeout(() => {
-      if (alert) {
-        alert.style.display = "block";
-        alert.innerHTML = `
+      if (feedback) {
+        feedback.style.display = "block";
+        feedback.innerHTML = `
           <strong><i class="fa-solid fa-circle-check"></i> Thank you, ${name}!</strong><br>
-          Your message has been sent successfully. I will reach out to <em>${email}</em> promptly!
-          <div style="margin-top: 0.5rem;">
-            <a href="https://wa.me/923111267926?text=${encodeURIComponent('Hi Abdul Rafay, I just sent you a message: ' + message)}" target="_blank" class="btn btn-outline btn-sm" style="margin-top: 0.35rem; display: inline-flex;">
-              <i class="fa-brands fa-whatsapp"></i> Also chat on WhatsApp
+          Your message has been received. Abdul Rafay will reply to <em>${email}</em> promptly!
+          <div style="margin-top: 0.65rem;">
+            <a href="https://wa.me/923111267926?text=${encodeURIComponent('Hi Abdul Rafay, I just submitted the contact form regarding ' + subject + ': ' + message)}" target="_blank" class="btn btn-secondary btn-sm" style="margin-top: 0.35rem; display: inline-flex;">
+              <i class="fa-brands fa-whatsapp"></i> Also chat directly on WhatsApp
             </a>
           </div>
         `;
       }
       form.reset();
-      if (btn) {
-        btn.innerHTML = orig;
-        btn.disabled = false;
+      if (submitBtn) {
+        submitBtn.innerHTML = origText;
+        submitBtn.disabled = false;
       }
     }, 900);
   });
-}
-
-/* --- Stat Counters Animation --- */
-function initStatCounters() {
-  const statNumbers = document.querySelectorAll(".stat-cell-value[data-target]");
-  if (!statNumbers.length) return;
-
-  const observer = new IntersectionObserver((entries, obs) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        const el = entry.target;
-        const target = parseInt(el.getAttribute("data-target"), 10) || 0;
-        const suffix = el.getAttribute("data-suffix") || "";
-        const duration = 1400;
-        const startTime = performance.now();
-
-        function update(currentTime) {
-          const elapsed = currentTime - startTime;
-          const progress = Math.min(elapsed / duration, 1);
-          const easeProgress = 1 - Math.pow(1 - progress, 3);
-          const current = Math.floor(easeProgress * target);
-
-          el.textContent = current + suffix;
-
-          if (progress < 1) {
-            requestAnimationFrame(update);
-          } else {
-            el.textContent = target + suffix;
-          }
-        }
-
-        requestAnimationFrame(update);
-        obs.unobserve(el);
-      }
-    });
-  }, { threshold: 0.4 });
-
-  statNumbers.forEach(num => observer.observe(num));
 }
