@@ -1,63 +1,68 @@
-# Shaikh Muhammad Rafay (Abdul Rafay Shaikh) - Premium Portfolio & CMS
+# Abdul Rafay Shaikh - Official Single-Page Portfolio
 
-A high-performance, cinematic portfolio website with an interactive, password-protected Admin Panel for **Abdul Rafay Shaikh** (Grade 9 Computer Science Educator, 2nd-Year BS–IT Scholar at GCUH Hyderabad, and Intermediate Adobe Premiere Pro Video Editor).
+Modern, high-performance single-page portfolio for **Abdul Rafay Shaikh** (Computer Science Teacher, Video Editor & Digital Creator).
 
----
-
-## 🌟 Features & Highlights
-
-- **Cinematic Visual Identity:**
-  - Dark Charcoal background (`#0a0c11`) with glowing vibrant orange (`#ff6b35`) and electric blue (`#00d2ff`) accents.
-  - Soft, blurred drifting ambient gradient background (no distracting lines or scanning bars).
-  - Smooth scroll reveal animations with staggered fades.
-  - Interactive stat counters that count up smoothly upon scroll.
-  - Responsive lightbox modal for portfolio project inspection.
-  - Infinite brand / tool marquee.
-  - Testimonial carousel with autoplay & dot navigation.
-
-- **Pages Included:**
-  1. `index.html` - Home Page (Hero, Animated Stats, Services Teaser, Featured Work, Testimonials, Collaborators Marquee, CTA, Footer)
-  2. `portfolio.html` - Dedicated Portfolio & Showcase (Filter tabs: CS Education, Video Editing, IT Notes; Lightbox preview)
-  3. `about.html` - Biography & Story (Narrative, Skills Progress Meters, Milestones Timeline)
-  4. `services.html` - Services & Transparent Starting Rates
-  5. `awards.html` - Honors, Achievements & Academic Qualifications
-  6. `contact.html` - Interactive Contact Form with glowing focus states & direct WhatsApp integration
-  7. `admin.html` - Full Password-Protected Admin CMS Dashboard
-
-- **Integrated Admin Panel (`admin.html`):**
-  - **Login Credentials:**
-    - **Username:** `admin`
-    - **Password:** `Admin@123`
-  - Real-time live updating without requiring a server (persisted in `localStorage`).
-  - Edit personal details, headline, bio, and social links.
-  - Add, edit, or delete **Services** (with pricing).
-  - Add, edit, or delete **Portfolio projects** (with category filters and custom tags).
-  - Add, edit, or delete **Awards & Achievements**.
-  - Upload profile photo and project thumbnails via local image upload (converted to Base64) or external URL.
-  - **4 Complete Color Themes Switcher:**
-    1. *Charcoal Orange* (Default)
-    2. *Midnight Blue*
-    3. *Slate Purple*
-    4. *Emerald Dark*
-  - Change default admin username & password.
-  - One-click "Reset Defaults" option.
+Designed with a sleek Obsidian Navy backdrop, royal indigo & electric blue accents, and an interactive smooth-scroll architecture.
 
 ---
 
-## 🚀 Live Deployment via GitHub Pages
+## 🌟 Sections Included
 
-This repository is ready to be hosted directly on GitHub Pages:
+1. **Header & Navigation:**
+   - Custom `AR` monogram branding.
+   - Smooth anchor links: `Home`, `About`, `Skills`, `Services`, `Portfolio`, `Contact`.
+   - `Let's Work ->` quick-action button.
 
-1. Open your repository on GitHub: [hydershaikhs/Shaikh-Muhammad-Rafay](https://github.com/hydershaikhs/Shaikh-Muhammad-Rafay)
-2. Go to **Settings** > **Pages** (under the "Code and automation" sidebar).
-3. Under **Branch**, select `main` and `/ (root)`, then click **Save**.
-4. In about 1 minute, your site will be live at:
-   `https://hydershaikhs.github.io/Shaikh-Muhammad-Rafay/`
+2. **Hero Section:**
+   - Headline: *Hi, I'm Abdul Rafay Shaikh*.
+   - Subtitle: *I teach Computer Science, create engaging content and turn ideas into compelling videos.*
+   - Quick CTAs: *View My Work* & *Get In Touch*.
+   - Direct social links: YouTube, Instagram, LinkedIn, and Email.
+   - Cinematic hero visual featuring signature *AR* and *Edit • Create • Inspire*.
+
+3. **About Me ("Turning Knowledge into Opportunities"):**
+   - Narrative highlighting Grade 9 Computer Science teaching, BS-IT studies at GCUH, and video post-production.
+   - Badges for **BS-IT (2nd Year, GCUH Hyderabad)** and **Hyderabad, Sindh, Pakistan**.
+   - Laptop post-production desk setup preview.
+
+4. **My Skills ("Tools I Use & Master"):**
+   - Interactive software badges for:
+     - **Premiere Pro** (*Intermediate*)
+     - **After Effects** (*Basic*)
+     - **Photoshop** (*Basic*)
+     - **CapCut** (*Intermediate*)
+     - **Meta Ads** (*Basic*)
+     - **Social Media Management** (*Intermediate*)
+
+5. **What I Do ("My Services"):**
+   - **Video Editing:** Short-form & long-form videos, reels, ads, social media content.
+   - **Meta Ads:** Campaign setup, creatives, targeting & optimization.
+   - **Social Media Management:** Content planning, post design, growth strategies.
+   - **UGC Ads & AI Videos:** Creative UGC style content and AI-powered videos.
+
+6. **Recent Work ("Featured Projects") & Stats:**
+   - **Meta Ads Campaign** (*Art & Painting Brand*)
+   - **FR POS - Lead Generation** (*FR Software Solutions*)
+   - **Social Media Management** (*Saadgiwear - Ecommerce*)
+   - **UGC Ad - White Oud** (*Oud Al Aziz - Perfume*)
+   - **Key Metrics Bar:**
+     - `2+` Years of Learning & Practice
+     - `5+` Projects Completed
+     - `3+` Tools & Platforms
+     - `100%` Passion for Growth
+
+7. **Contact & Footer:**
+   - Direct interactive message form.
+   - WhatsApp quick chat (`+92 311 1267926`) and direct email (`shaikhabdulrafay815@gmail.com`).
+   - Slogan: *Teach • Create • Grow*.
 
 ---
 
-## 🔒 Security Note
-When you first log in to `admin.html`, go to the **Security & Pass** tab and update your password from the default `Admin@123` to your own confidential password before sharing the site publicly.
+## 🚀 Live on GitHub Pages
+
+1. Go to repository: [hydershaikhs/Shaikh-Muhammad-Rafay](https://github.com/hydershaikhs/Shaikh-Muhammad-Rafay)
+2. Settings ➔ Pages ➔ select branch `main` ➔ `/ (root)` ➔ click **Save**.
+3. Live Site: `https://hydershaikhs.github.io/Shaikh-Muhammad-Rafay/`
 
 ---
 

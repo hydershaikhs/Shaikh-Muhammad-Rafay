@@ -1,51 +1,46 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="charcoal-orange">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Abdul Rafay Shaikh | Computer Science Educator & Video Editor</title>
-  <meta name="description" content="Portfolio of Abdul Rafay Shaikh (Shaikh Muhammad Rafay) - Grade 9 Computer Science Teacher, BS-IT Scholar at GCUH, and Adobe Premiere Pro Video Editor.">
+  <title>Abdul Rafay Shaikh | Computer Science Teacher & Video Editor</title>
+  <meta name="description" content="Portfolio of Abdul Rafay Shaikh - Computer Science Teacher, Video Editor, and Digital Creator based in Hyderabad, Sindh, Pakistan.">
   
   <!-- Favicon / Fonts / Icons -->
-  <link rel="icon" type="image/svg+xml" href="assets/profile.svg">
+  <link rel="icon" type="image/svg+xml" href="assets/ar-logo.svg">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-  <!-- Ambient Glowing Blurred Gradient Layers (No distracting lines) -->
-  <div class="ambient-glow-layer">
-    <div class="glow-orb glow-orb-1"></div>
-    <div class="glow-orb glow-orb-2"></div>
-    <div class="glow-orb glow-orb-3"></div>
-  </div>
+  <!-- Ambient Blue Ambient Glows -->
+  <div class="ambient-glow-top"></div>
+  <div class="ambient-glow-mid"></div>
 
-  <!-- Main Navigation Bar -->
+  <!-- Header / Navbar -->
   <header class="navbar">
     <div class="container nav-container">
-      <a href="index.html" class="brand-logo">
-        <span class="brand-badge-symbol">R</span>
-        <div>
-          <span data-cms="profile.name">Abdul Rafay Shaikh</span>
-        </div>
+      <a href="#home" class="brand-logo">
+        <img src="assets/ar-logo.svg" alt="AR Monogram" width="36" height="28">
+        <span>Abdul Rafay Shaikh</span>
       </a>
 
       <nav>
         <ul class="nav-links">
-          <li><a href="index.html" class="nav-link active">Home</a></li>
-          <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
-          <li><a href="about.html" class="nav-link">About</a></li>
-          <li><a href="services.html" class="nav-link">Services</a></li>
-          <li><a href="awards.html" class="nav-link">Achievements</a></li>
-          <li><a href="contact.html" class="nav-link">Contact</a></li>
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#services" class="nav-link">Services</a></li>
+          <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
         </ul>
       </nav>
 
-      <div class="nav-actions">
-        <a href="admin.html" class="admin-nav-pill">
-          <i class="fa-solid fa-lock"></i> Admin
+      <div style="display: flex; align-items: center; gap: 1rem;">
+        <a href="#contact" class="btn btn-outline btn-sm">
+          <span>Let's Work</span>
+          <i class="fa-solid fa-arrow-right" style="font-size: 0.75rem;"></i>
         </a>
-        <a href="contact.html" class="btn btn-primary btn-sm" style="display: none;" id="nav-cta-btn">Hire Me</a>
         <button class="mobile-toggle" aria-label="Toggle Navigation">
           <i class="fa-solid fa-bars"></i>
         </button>
@@ -53,83 +48,56 @@
     </div>
   </header>
 
-  <!-- Hero Section -->
-  <section class="hero">
+  <!-- Hero Section (#home) -->
+  <section class="hero-section" id="home">
     <div class="container">
       <div class="hero-grid">
         
-        <!-- Text & Intro Column -->
-        <div class="hero-content reveal">
-          <div class="hero-greeting">
-            <span class="status-dot"></span>
-            <span>Available for Teaching, Tutoring &amp; Video Projects</span>
+        <!-- Left Hero Content -->
+        <div>
+          <div class="hero-subtitle-bar">
+            <span>COMPUTER SCIENCE TEACHER</span> | | <span>VIDEO EDITOR</span> | | <span>DIGITAL CREATOR</span>
           </div>
 
-          <h1 class="hero-title">
-            Hi, I'm <span class="gradient-text" data-cms="profile.name">Abdul Rafay Shaikh</span>
+          <h1 class="hero-heading">
+            Hi, I'm<br>
+            Abdul Rafay <span class="gradient-text">Shaikh</span>
           </h1>
 
-          <div class="hero-tagline" data-cms="profile.tagline">
-            Empowering Grade 9 minds through computing fundamentals &amp; crafting cinematic video stories.
-          </div>
-
-          <p class="hero-bio" data-cms="profile.bio">
-            Dedicated Computer Science Educator and 2nd-Year BS–IT Scholar at Government College University, Hyderabad (GCUH). Intermediate Adobe Premiere Pro video editor turning complex tech and raw footage into captivating narratives.
+          <p class="hero-description">
+            I teach Computer Science, create engaging content and turn ideas into compelling videos.
           </p>
 
-          <div class="hero-cta-group">
-            <a href="portfolio.html" class="btn btn-primary">
+          <div class="hero-cta-wrap">
+            <a href="#portfolio" class="btn btn-primary">
               <span>View My Work</span>
               <i class="fa-solid fa-arrow-right"></i>
             </a>
-            <a href="contact.html" class="btn btn-secondary">
-              <i class="fa-regular fa-paper-plane"></i>
-              <span>Get in Touch</span>
+            <a href="#contact" class="btn btn-outline">
+              <span>Get In Touch</span>
             </a>
           </div>
 
-          <div class="hero-badges-strip">
-            <div class="badge-item">
-              <i class="fa-solid fa-graduation-cap"></i>
-              <span>BS–IT 2nd Year (GCUH)</span>
-            </div>
-            <div class="badge-item">
-              <i class="fa-solid fa-chalkboard-user"></i>
-              <span>Grade 9 CS Specialist</span>
-            </div>
-            <div class="badge-item">
-              <i class="fa-solid fa-film"></i>
-              <span>Adobe Premiere Pro</span>
-            </div>
-            <div class="badge-item">
-              <i class="fa-solid fa-location-dot"></i>
-              <span>Hyderabad, Pakistan</span>
-            </div>
+          <div class="hero-social-icons">
+            <a href="https://youtube.com/@rafayshaikh" target="_blank" class="hero-social-link" title="YouTube" aria-label="YouTube">
+              <i class="fa-brands fa-youtube"></i>
+            </a>
+            <a href="https://instagram.com/rafay_editz" target="_blank" class="hero-social-link" title="Instagram" aria-label="Instagram">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://linkedin.com/in/abdul-rafay-shaikh" target="_blank" class="hero-social-link" title="LinkedIn" aria-label="LinkedIn">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+            <a href="mailto:shaikhabdulrafay815@gmail.com" class="hero-social-link" title="Email" aria-label="Email">
+              <i class="fa-regular fa-envelope"></i>
+            </a>
           </div>
         </div>
 
-        <!-- Visual / Profile Photo with Glowing Frame -->
-        <div class="hero-visual reveal reveal-delay-1">
-          <div class="profile-card-wrapper">
-            <div class="floating-badge floating-badge-top">
-              <i class="fa-solid fa-code"></i>
-              <div>
-                <strong>Curriculum Notes &amp; Coding</strong>
-                <div style="font-size: 0.72rem; color: var(--text-muted);">Grade 9 Board Prep</div>
-              </div>
-            </div>
-
-            <div class="profile-image-container">
-              <img src="assets/profile.svg" alt="Abdul Rafay Shaikh" data-cms="profile.image">
-            </div>
-
-            <div class="floating-badge floating-badge-bottom">
-              <i class="fa-solid fa-video"></i>
-              <div>
-                <strong>Premiere Pro Video Editor</strong>
-                <div style="font-size: 0.72rem; color: var(--text-muted);">Reels &amp; Long-Form Edits</div>
-              </div>
-            </div>
+        <!-- Right Hero Visual -->
+        <div>
+          <div class="hero-visual-card">
+            <img src="assets/hero-portrait.jpg" alt="Abdul Rafay Shaikh - Edit Create Inspire">
           </div>
         </div>
 
@@ -137,286 +105,437 @@
     </div>
   </section>
 
-  <!-- Key Stats Section (Animated Counters) -->
-  <section class="stats-section">
+  <!-- About Me Section (#about) -->
+  <section class="about-section" id="about">
     <div class="container">
-      <div class="stats-card-grid reveal">
+      <div class="about-grid">
         
-        <div class="stat-item">
-          <div class="stat-number-wrap">
-            <span class="stat-number" data-target="80">0</span>
-            <span class="stat-suffix">+</span>
-          </div>
-          <div class="stat-label">Videos Edited &amp; Produced</div>
+        <!-- Left Media Box (Premiere Pro Laptop Setup) -->
+        <div class="about-media-box">
+          <img src="assets/about-laptop.jpg" alt="Video Editing Desk Setup - Adobe Premiere Pro">
         </div>
 
-        <div class="stat-item">
-          <div class="stat-number-wrap">
-            <span class="stat-number" data-target="120">0</span>
-            <span class="stat-suffix">+</span>
-          </div>
-          <div class="stat-label">Students &amp; Peers Mentored</div>
-        </div>
+        <!-- Right Content Box -->
+        <div class="about-content-box">
+          <span class="section-tag">ABOUT ME</span>
+          <h2 class="section-title">Turning Knowledge into Opportunities</h2>
+          <p>
+            I'm <strong>Abdul Rafay Shaikh</strong> — a Computer Science teacher for <em>Grade 9</em> and a BS–IT student at GCUH. I have a passion for teaching, technology and content creation. I enjoy helping students build strong computer fundamentals while also creating videos and digital content that inform, engage and make an impact.
+          </p>
 
-        <div class="stat-item">
-          <div class="stat-number-wrap">
-            <span class="stat-number" data-target="2">0</span>
-            <span class="stat-suffix">+</span>
-          </div>
-          <div class="stat-label">Years Teaching &amp; Tech Practice</div>
-        </div>
+          <div class="about-badges-row">
+            <div class="about-badge-item">
+              <div class="about-badge-icon">
+                <i class="fa-solid fa-graduation-cap"></i>
+              </div>
+              <div>
+                <div class="about-badge-title">BS-IT (2nd Year)</div>
+                <div class="about-badge-sub">GCUH, Hyderabad</div>
+              </div>
+            </div>
 
-        <div class="stat-item">
-          <div class="stat-number-wrap">
-            <span class="stat-number" data-target="4.9">0</span>
-            <span class="stat-suffix">/5</span>
+            <div class="about-badge-item">
+              <div class="about-badge-icon">
+                <i class="fa-solid fa-location-dot"></i>
+              </div>
+              <div>
+                <div class="about-badge-title">Hyderabad, Sindh</div>
+                <div class="about-badge-sub">Pakistan</div>
+              </div>
+            </div>
           </div>
-          <div class="stat-label">Average Student &amp; Client Rating</div>
         </div>
 
       </div>
     </div>
   </section>
 
-  <!-- Teaser Services Section -->
-  <section class="section">
+  <!-- My Skills Section (#skills) -->
+  <section class="skills-section" id="skills">
     <div class="container">
-      <div class="section-title-wrap reveal">
-        <span class="section-badge"><i class="fa-solid fa-layer-group"></i> Areas of Expertise</span>
-        <h2 class="section-title">What I Bring to the Table</h2>
-        <p class="section-subtitle">
-          Whether delivering structured classroom lectures on computing foundations or crafting high-impact video edits, quality and clarity are guaranteed.
-        </p>
-      </div>
+      <div class="skills-layout-grid">
+        
+        <!-- Left Info -->
+        <div>
+          <span class="section-tag">MY SKILLS</span>
+          <h2 class="section-title">Tools I Use &amp; Master</h2>
+          <p class="section-subtitle" style="margin-bottom: 2rem;">
+            I work with modern tools to create, edit and deliver high-quality content and digital solutions.
+          </p>
+          <a href="#contact" class="btn btn-outline btn-sm">
+            <span>View All Skills</span>
+            <i class="fa-solid fa-arrow-right" style="font-size: 0.75rem;"></i>
+          </a>
+        </div>
 
-      <div class="services-grid" id="dynamic-services-grid">
-        <!-- Injected dynamically via js/main.js -->
-      </div>
-
-      <div style="text-align: center; margin-top: 3rem;" class="reveal">
-        <a href="services.html" class="btn btn-secondary">
-          <span>View All Services &amp; Packages</span>
-          <i class="fa-solid fa-arrow-right"></i>
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Featured Work Showcase Section -->
-  <section class="section" id="featured-work">
-    <div class="container">
-      <div class="section-title-wrap reveal">
-        <span class="section-badge"><i class="fa-solid fa-fire"></i> Featured Highlights</span>
-        <h2 class="section-title">Recent Work &amp; Projects</h2>
-        <p class="section-subtitle">
-          A glimpse of curriculum lesson resources, high-engagement video edits, and computer science projects.
-        </p>
-      </div>
-
-      <div class="portfolio-grid" id="home-featured-grid">
-        <!-- Injected dynamically via js/main.js -->
-      </div>
-
-      <div style="text-align: center; margin-top: 3.5rem;" class="reveal">
-        <a href="portfolio.html" class="btn btn-primary">
-          <span>View Full Portfolio Showcase</span>
-          <i class="fa-solid fa-grip"></i>
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Testimonials Carousel Section -->
-  <section class="section">
-    <div class="container">
-      <div class="section-title-wrap reveal">
-        <span class="section-badge"><i class="fa-solid fa-comments"></i> Endorsements</span>
-        <h2 class="section-title">What Students &amp; Clients Say</h2>
-        <p class="section-subtitle">
-          Real feedback from students preparing for matriculation exams and content creators collaborating on video edits.
-        </p>
-      </div>
-
-      <div class="testimonials-slider-container reveal">
-        <div class="testimonial-track">
+        <!-- Right Grid of 6 Software Cards -->
+        <div class="skills-cards-grid">
           
-          <div class="testimonial-card active">
-            <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
-            <p class="testimonial-quote">
-              "Sir Abdul Rafay simplified binary arithmetic and flowcharts for me. I went from being confused about Grade 9 CS to securing an A+ in my school mid-term exams!"
-            </p>
-            <div class="testimonial-author-wrap">
-              <div class="testimonial-avatar">H</div>
-              <div>
-                <div class="testimonial-author">Hassan Ali</div>
-                <div class="testimonial-role">Grade 9 Computer Science Student, Hyderabad</div>
-              </div>
+          <div class="tool-skill-card">
+            <div class="tool-icon-square tool-pr">Pr</div>
+            <div>
+              <div class="tool-info-title">Premiere Pro</div>
+              <div class="tool-info-level">Intermediate</div>
             </div>
           </div>
 
-          <div class="testimonial-card">
-            <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
-            <p class="testimonial-quote">
-              "Rafay's video editing in Premiere Pro is sharp, cinematic, and retains viewer attention. His pacing on my YouTube tech explainers doubled our average watch duration."
-            </p>
-            <div class="testimonial-author-wrap">
-              <div class="testimonial-avatar">Z</div>
-              <div>
-                <div class="testimonial-author">Zubair Ahmed</div>
-                <div class="testimonial-role">Tech Content Creator &amp; YouTube Client</div>
-              </div>
+          <div class="tool-skill-card">
+            <div class="tool-icon-square tool-ae">Ae</div>
+            <div>
+              <div class="tool-info-title">After Effects</div>
+              <div class="tool-info-level">Basic</div>
             </div>
           </div>
 
-          <div class="testimonial-card">
-            <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
-            <p class="testimonial-quote">
-              "A dedicated educator who truly cares about student fundamentals. His lesson plans on MS Office and networking are exceptionally well-structured and practical."
-            </p>
-            <div class="testimonial-author-wrap">
-              <div class="testimonial-avatar">T</div>
-              <div>
-                <div class="testimonial-author">Tariq Mahmood</div>
-                <div class="testimonial-role">Senior Academic Coordinator</div>
-              </div>
+          <div class="tool-skill-card">
+            <div class="tool-icon-square tool-ps">Ps</div>
+            <div>
+              <div class="tool-info-title">Photoshop</div>
+              <div class="tool-info-level">Basic</div>
+            </div>
+          </div>
+
+          <div class="tool-skill-card">
+            <div class="tool-icon-square tool-capcut">
+              <i class="fa-solid fa-scissors"></i>
+            </div>
+            <div>
+              <div class="tool-info-title">CapCut</div>
+              <div class="tool-info-level">Intermediate</div>
+            </div>
+          </div>
+
+          <div class="tool-skill-card">
+            <div class="tool-icon-square tool-meta">
+              <i class="fa-brands fa-meta"></i>
+            </div>
+            <div>
+              <div class="tool-info-title">Meta Ads</div>
+              <div class="tool-info-level">Basic</div>
+            </div>
+          </div>
+
+          <div class="tool-skill-card">
+            <div class="tool-icon-square tool-social">
+              <i class="fa-solid fa-share-nodes"></i>
+            </div>
+            <div>
+              <div class="tool-info-title">Social Media Management</div>
+              <div class="tool-info-level">Intermediate</div>
             </div>
           </div>
 
         </div>
 
-        <div class="slider-controls">
-          <button class="slider-btn slider-btn-prev" aria-label="Previous Review">
-            <i class="fa-solid fa-chevron-left"></i>
-          </button>
-          <div class="slider-dots">
-            <span class="slider-dot active" data-index="0"></span>
-            <span class="slider-dot" data-index="1"></span>
-            <span class="slider-dot" data-index="2"></span>
-          </div>
-          <button class="slider-btn slider-btn-next" aria-label="Next Review">
-            <i class="fa-solid fa-chevron-right"></i>
-          </button>
-        </div>
       </div>
     </div>
   </section>
 
-  <!-- Brands / Collaborations Endless Marquee -->
-  <section class="marquee-section">
-    <div class="marquee-track">
-      <div class="marquee-item"><i class="fa-solid fa-university"></i> GCUH IT Dept</div>
-      <div class="marquee-item"><i class="fa-solid fa-film"></i> Adobe Premiere Pro</div>
-      <div class="marquee-item"><i class="fa-solid fa-chalkboard-user"></i> Google Classroom</div>
-      <div class="marquee-item"><i class="fa-solid fa-file-excel"></i> Microsoft 365</div>
-      <div class="marquee-item"><i class="fa-solid fa-video"></i> Zoom Education</div>
-      <div class="marquee-item"><i class="fa-solid fa-book-open"></i> Sindh Board CS</div>
-      <div class="marquee-item"><i class="fa-brands fa-youtube"></i> YouTube Creators Hub</div>
-      <!-- Duplicate for seamless looping -->
-      <div class="marquee-item"><i class="fa-solid fa-university"></i> GCUH IT Dept</div>
-      <div class="marquee-item"><i class="fa-solid fa-film"></i> Adobe Premiere Pro</div>
-      <div class="marquee-item"><i class="fa-solid fa-chalkboard-user"></i> Google Classroom</div>
-      <div class="marquee-item"><i class="fa-solid fa-file-excel"></i> Microsoft 365</div>
-      <div class="marquee-item"><i class="fa-solid fa-video"></i> Zoom Education</div>
-      <div class="marquee-item"><i class="fa-solid fa-book-open"></i> Sindh Board CS</div>
-      <div class="marquee-item"><i class="fa-brands fa-youtube"></i> YouTube Creators Hub</div>
-    </div>
-  </section>
-
-  <!-- Call to Action Banner -->
-  <section class="section">
+  <!-- Services Section (#services) -->
+  <section class="services-section" id="services">
     <div class="container">
-      <div class="cta-banner reveal">
-        <span class="section-badge"><i class="fa-solid fa-bolt"></i> Ready to Collaborate?</span>
-        <h2>Looking for an engaging CS Teacher or Video Editor?</h2>
-        <p>
-          Let's discuss how I can help your students master Grade 9 Computer Science concepts, or help your channel produce high-retention cinematic videos.
+      <div>
+        <span class="section-tag">WHAT I DO</span>
+        <h2 class="section-title">My Services</h2>
+        <p class="section-subtitle">
+          I help brands, businesses and students with creative and digital solutions that create real value.
         </p>
-        <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
-          <a href="contact.html" class="btn btn-primary">
-            <i class="fa-regular fa-paper-plane"></i>
-            <span>Send Me a Message</span>
-          </a>
-          <a href="https://wa.me/923111267926" target="_blank" class="btn btn-secondary" data-cms="profile.whatsapp">
-            <i class="fa-brands fa-whatsapp"></i>
-            <span>Chat on WhatsApp</span>
+      </div>
+
+      <div class="services-cards-grid">
+        
+        <div class="service-box">
+          <div class="service-box-icon">
+            <i class="fa-solid fa-video"></i>
+          </div>
+          <h3 class="service-box-title">Video Editing</h3>
+          <p class="service-box-desc">
+            Short-form &amp; long-form videos, reels, ads, social media content.
+          </p>
+          <a href="#contact" class="service-arrow-btn" aria-label="Inquire about Video Editing">
+            <i class="fa-solid fa-arrow-right"></i>
           </a>
         </div>
+
+        <div class="service-box">
+          <div class="service-box-icon">
+            <i class="fa-brands fa-meta"></i>
+          </div>
+          <h3 class="service-box-title">Meta Ads</h3>
+          <p class="service-box-desc">
+            Campaign setup, creatives, targeting &amp; optimization.
+          </p>
+          <a href="#contact" class="service-arrow-btn" aria-label="Inquire about Meta Ads">
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+
+        <div class="service-box">
+          <div class="service-box-icon">
+            <i class="fa-brands fa-instagram"></i>
+          </div>
+          <h3 class="service-box-title">Social Media Management</h3>
+          <p class="service-box-desc">
+            Content planning, post design, growth strategies.
+          </p>
+          <a href="#contact" class="service-arrow-btn" aria-label="Inquire about Social Media Management">
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+
+        <div class="service-box">
+          <div class="service-box-icon">
+            <i class="fa-solid fa-wand-magic-sparkles"></i>
+          </div>
+          <h3 class="service-box-title">UGC Ads &amp; AI Videos</h3>
+          <p class="service-box-desc">
+            Creative UGC style content and AI-powered videos.
+          </p>
+          <a href="#contact" class="service-arrow-btn" aria-label="Inquire about UGC & AI Videos">
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+
       </div>
     </div>
   </section>
 
-  <!-- Footer -->
+  <!-- Featured Projects Section (#portfolio) -->
+  <section class="projects-section" id="portfolio">
+    <div class="container">
+      <div class="projects-header-row">
+        <div>
+          <span class="section-tag">RECENT WORK</span>
+          <h2 class="section-title" style="margin-bottom: 0;">Featured Projects</h2>
+        </div>
+        <div>
+          <a href="#contact" class="btn btn-outline btn-sm">
+            <span>View All Projects</span>
+            <i class="fa-solid fa-arrow-right" style="font-size: 0.75rem;"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- 4 Project Cards Grid -->
+      <div class="projects-grid">
+        
+        <div class="project-item-card" data-title="Meta Ads Campaign" data-brand="Art &amp; Painting Brand">
+          <div class="project-thumb-container">
+            <img src="assets/proj-meta.jpg" alt="Meta Ads Campaign - Art & Painting Brand">
+          </div>
+          <div class="project-item-body">
+            <div>
+              <div class="project-item-title">Meta Ads Campaign</div>
+              <div class="project-item-brand">Art &amp; Painting Brand</div>
+            </div>
+            <div class="project-circle-btn">
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-item-card" data-title="FR POS - Lead Generation" data-brand="FR Software Solutions">
+          <div class="project-thumb-container">
+            <img src="assets/proj-pos.jpg" alt="FR POS - Lead Generation">
+          </div>
+          <div class="project-item-body">
+            <div>
+              <div class="project-item-title">FR POS - Lead Generation</div>
+              <div class="project-item-brand">FR Software Solutions</div>
+            </div>
+            <div class="project-circle-btn">
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-item-card" data-title="Social Media Management" data-brand="Saadgiwear (Ecommerce)">
+          <div class="project-thumb-container">
+            <img src="assets/proj-social.jpg" alt="Social Media Management - Saadgiwear">
+          </div>
+          <div class="project-item-body">
+            <div>
+              <div class="project-item-title">Social Media Management</div>
+              <div class="project-item-brand">Saadgiwear (Ecommerce)</div>
+            </div>
+            <div class="project-circle-btn">
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-item-card" data-title="UGC Ad - White Oud" data-brand="Oud Al Aziz (Perfume)">
+          <div class="project-thumb-container">
+            <img src="assets/proj-ugc.jpg" alt="UGC Ad - White Oud Perfume">
+          </div>
+          <div class="project-item-body">
+            <div>
+              <div class="project-item-title">UGC Ad - White Oud</div>
+              <div class="project-item-brand">Oud Al Aziz (Perfume)</div>
+            </div>
+            <div class="project-circle-btn">
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Stats Pill Bar (Exactly as shown in bottom of mockup) -->
+      <div class="stats-pill-bar">
+        
+        <div class="stat-cell">
+          <div class="stat-cell-icon">
+            <i class="fa-regular fa-user"></i>
+          </div>
+          <div>
+            <div class="stat-cell-value" data-target="2" data-suffix="+">2+</div>
+            <div class="stat-cell-label">Years of Learning &amp; Practice</div>
+          </div>
+        </div>
+
+        <div class="stat-cell">
+          <div class="stat-cell-icon">
+            <i class="fa-regular fa-folder-closed"></i>
+          </div>
+          <div>
+            <div class="stat-cell-value" data-target="5" data-suffix="+">5+</div>
+            <div class="stat-cell-label">Projects Completed</div>
+          </div>
+        </div>
+
+        <div class="stat-cell">
+          <div class="stat-cell-icon">
+            <i class="fa-solid fa-shield-halved"></i>
+          </div>
+          <div>
+            <div class="stat-cell-value" data-target="3" data-suffix="+">3+</div>
+            <div class="stat-cell-label">Tools &amp; Platforms</div>
+          </div>
+        </div>
+
+        <div class="stat-cell">
+          <div class="stat-cell-icon">
+            <i class="fa-regular fa-comments"></i>
+          </div>
+          <div>
+            <div class="stat-cell-value" data-target="100" data-suffix="%">100%</div>
+            <div class="stat-cell-label">Passion for Growth</div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Contact Section (#contact) -->
+  <section class="contact-section" id="contact">
+    <div class="container">
+      <div class="contact-card-box">
+        
+        <div class="contact-left">
+          <span class="section-tag">GET IN TOUCH</span>
+          <h2>Let's Work Together</h2>
+          <p>
+            Have a project in mind, need Grade 9 Computer Science tutoring, or want to collaborate on video content? Feel free to reach out directly.
+          </p>
+
+          <div class="contact-direct-links">
+            <a href="mailto:shaikhabdulrafay815@gmail.com" class="contact-direct-link">
+              <i class="fa-regular fa-envelope"></i>
+              <span>shaikhabdulrafay815@gmail.com</span>
+            </a>
+            <a href="https://wa.me/923111267926" target="_blank" class="contact-direct-link">
+              <i class="fa-brands fa-whatsapp"></i>
+              <span>+92 311 1267926 (WhatsApp Available)</span>
+            </a>
+            <div class="contact-direct-link">
+              <i class="fa-solid fa-location-dot"></i>
+              <span>Hyderabad, Sindh, Pakistan</span>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <form id="portfolio-contact-form" class="contact-form-inner">
+            <input type="text" id="user-name" class="contact-input" placeholder="Your Name" required>
+            <input type="email" id="user-email" class="contact-input" placeholder="Your Email Address" required>
+            <textarea id="user-message" class="contact-input" rows="4" placeholder="How can I help you?" required></textarea>
+            <button type="submit" class="btn btn-primary" style="width: 100%;">
+              <span>Send Message</span>
+              <i class="fa-solid fa-paper-plane"></i>
+            </button>
+            <div id="form-alert" class="form-success-alert"></div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer (Matches exact mockup structure) -->
   <footer class="footer">
     <div class="container">
-      <div class="footer-grid">
-        <div class="footer-brand">
-          <a href="index.html" class="brand-logo">
-            <span class="brand-badge-symbol">R</span>
-            <span data-cms="profile.name">Abdul Rafay Shaikh</span>
+      
+      <div class="footer-main-row">
+        
+        <!-- Left: Logo & Subtitles -->
+        <div>
+          <a href="#home" class="brand-logo" style="margin-bottom: 0.35rem;">
+            <img src="assets/ar-logo.svg" alt="AR Monogram" width="36" height="28">
+            <span>Abdul Rafay Shaikh</span>
           </a>
-          <p>
-            Computer Science Educator (Grade 9 Specialist), BS-IT Scholar at GCUH Hyderabad, and Adobe Premiere Pro Video Editor.
-          </p>
+          <div style="font-size: 0.78rem; color: var(--text-muted); padding-left: 2.8rem;">
+            Teacher &nbsp;|&nbsp; Video Editor &nbsp;|&nbsp; Creator
+          </div>
         </div>
 
-        <div class="footer-col">
-          <h4>Navigation</h4>
-          <ul class="footer-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="portfolio.html">Portfolio</a></li>
-            <li><a href="about.html">About Story</a></li>
-            <li><a href="services.html">Services &amp; Rates</a></li>
-            <li><a href="awards.html">Achievements</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
+        <!-- Center: Collaboration Prompt -->
+        <div class="footer-center-content">
+          <h4>Let's Work Together</h4>
+          <p>Have a project in mind or want to collaborate? Feel free to reach out.</p>
         </div>
 
-        <div class="footer-col">
-          <h4>Services</h4>
-          <ul class="footer-links">
-            <li><a href="services.html">Grade 9 CS Coaching</a></li>
-            <li><a href="services.html">Premiere Pro Video Editing</a></li>
-            <li><a href="services.html">Flowcharts &amp; Logic</a></li>
-            <li><a href="services.html">MS Office &amp; ICT</a></li>
-            <li><a href="services.html">Board Exam Crash Courses</a></li>
-          </ul>
+        <!-- Right: Contact Pill & Socials -->
+        <div class="footer-right-actions">
+          <a href="#contact" class="btn btn-primary btn-sm">
+            <span>Contact Me</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+          <div style="display: flex; gap: 0.85rem;">
+            <a href="https://youtube.com/@rafayshaikh" target="_blank" class="hero-social-link"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://instagram.com/rafay_editz" target="_blank" class="hero-social-link"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://linkedin.com/in/abdul-rafay-shaikh" target="_blank" class="hero-social-link"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="mailto:shaikhabdulrafay815@gmail.com" class="hero-social-link"><i class="fa-regular fa-envelope"></i></a>
+          </div>
         </div>
 
-        <div class="footer-col">
-          <h4>Contact &amp; Admin</h4>
-          <ul class="footer-links">
-            <li><a href="mailto:shaikhabdulrafay815@gmail.com" data-cms="profile.email"><i class="fa-solid fa-envelope"></i> shaikhabdulrafay815@gmail.com</a></li>
-            <li><a href="tel:+923111267926" data-cms="profile.phone"><i class="fa-solid fa-phone"></i> +92 311 1267926</a></li>
-            <li><a href="https://wa.me/923111267926" target="_blank"><i class="fa-brands fa-whatsapp"></i> WhatsApp Available</a></li>
-            <li style="margin-top: 0.75rem;"><a href="admin.html" style="color: var(--accent-primary);"><i class="fa-solid fa-gear"></i> Admin Management Portal</a></li>
-          </ul>
-        </div>
       </div>
 
-      <div class="footer-bottom">
-        <p>&copy; 2026 Abdul Rafay Shaikh (Shaikh Muhammad Rafay). All rights reserved.</p>
-        <p>Built with cinematic design &amp; live custom CMS.</p>
+      <!-- Bottom Sub-bar -->
+      <div class="footer-sub-bar">
+        <div>&copy; 2026 Abdul Rafay Shaikh. All rights reserved.</div>
+        <div style="color: var(--text-muted); letter-spacing: 0.08em;">Teach &nbsp;•&nbsp; Create &nbsp;•&nbsp; Grow</div>
       </div>
+
     </div>
   </footer>
 
-  <!-- Portfolio Lightbox Modal (For preview) -->
-  <div class="lightbox-modal" id="portfolio-lightbox">
+  <!-- Lightbox Modal for Project Inspection -->
+  <div class="lightbox-modal" id="project-lightbox">
     <div class="lightbox-content">
       <button class="lightbox-close" aria-label="Close Preview">&times;</button>
-      <div class="lightbox-image-wrap">
+      <div class="lightbox-img-wrap">
         <img src="" id="lightbox-img" alt="Project Preview">
       </div>
-      <div class="lightbox-details">
-        <span class="lightbox-tag" id="lightbox-tag">Category</span>
-        <h3 class="lightbox-title" id="lightbox-title">Project Title</h3>
-        <p class="lightbox-desc" id="lightbox-desc">Project Description</p>
+      <div class="lightbox-meta">
+        <h3 id="lightbox-title" style="font-size: 1.3rem; margin-bottom: 0.25rem;">Project Title</h3>
+        <p id="lightbox-brand" style="color: var(--accent-blue); font-size: 0.88rem;">Brand Details</p>
       </div>
     </div>
   </div>
 
-  <!-- Scripts -->
-  <script src="js/data.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>
