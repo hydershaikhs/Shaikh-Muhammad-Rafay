@@ -18,7 +18,7 @@ Themed with a deep Obsidian Navy palette, royal indigo & electric cyan-blue acce
    - Headline: *Hi, I'm Abdul Rafay Shaikh*.
    - Tagline: *Empowering Grade 9 minds through computing fundamentals & crafting cinematic video stories.*
    - CTAs: *View My Work* & *Get in Touch*.
-   - Direct social links: YouTube, Instagram, LinkedIn, and Email.
+   - Direct social links: Facebook, Instagram, LinkedIn, and WhatsApp.
    - Profile card with glowing border frame and floating badges (*Curriculum Notes & Coding*, *Premiere Pro Video Editor*).
 
 3. **Key Stats Section (Animated Counters):**

@@ -287,13 +287,27 @@ button, input, textarea, select {
   border-radius: 2px;
 }
 
+/* Mobile Toggle Button */
 .mobile-toggle {
   display: none;
-  background: transparent;
-  border: none;
+  width: 42px;
+  height: 42px;
+  border-radius: 10px;
+  background: rgba(79, 70, 229, 0.15);
+  border: 1px solid rgba(79, 70, 229, 0.4);
   color: #fff;
-  font-size: 1.35rem;
+  font-size: 1.25rem;
   cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.25s ease;
+  z-index: 1002;
+}
+
+.mobile-toggle:hover {
+  background: var(--accent-primary);
+  border-color: var(--accent-secondary);
+  box-shadow: 0 0 15px var(--accent-primary-glow);
 }
 
 /* --- Buttons --- */
@@ -476,6 +490,7 @@ button, input, textarea, select {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center 15%;
   transition: transform 0.6s ease;
 }
 
@@ -1330,11 +1345,52 @@ button, input, textarea, select {
   .footer-grid {
     grid-template-columns: 1fr 1fr;
   }
+
+  /* Mobile Navigation Menu at 992px and below */
+  .mobile-toggle {
+    display: flex !important;
+  }
+
+  .nav-links {
+    position: fixed;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background: #090c14;
+    flex-direction: column;
+    padding: 2rem 1.5rem;
+    gap: 1.25rem;
+    border-bottom: 1px solid var(--border-glow);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.8);
+    transform: translateY(-160%);
+    opacity: 0;
+    visibility: hidden;
+    transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.35s ease, visibility 0.35s ease;
+    z-index: 1000;
+  }
+
+  .nav-links.active {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .nav-link {
+    font-size: 1.05rem;
+    font-weight: 600;
+    width: 100%;
+    text-align: center;
+    padding: 0.5rem 0;
+  }
+
+  .nav-cta-btn {
+    display: none;
+  }
 }
 
 @media (max-width: 768px) {
   .hero-title {
-    font-size: 2.6rem;
+    font-size: 2.5rem;
   }
   .stats-card-grid {
     grid-template-columns: 1fr;
@@ -1342,26 +1398,6 @@ button, input, textarea, select {
   }
   .stat-item::after {
     display: none !important;
-  }
-  .nav-links {
-    position: fixed;
-    top: 65px;
-    left: 0;
-    width: 100%;
-    background: #07080d;
-    flex-direction: column;
-    padding: 2rem 1.5rem;
-    gap: 1.25rem;
-    border-bottom: 1px solid var(--border-subtle);
-    transform: translateY(-150%);
-    transition: transform 0.3s ease;
-    z-index: 999;
-  }
-  .nav-links.active {
-    transform: translateY(0);
-  }
-  .mobile-toggle {
-    display: block;
   }
   .footer-grid {
     grid-template-columns: 1fr;
