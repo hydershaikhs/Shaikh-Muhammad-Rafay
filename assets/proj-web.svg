@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="webGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e1b4b"/>
+    </linearGradient>
+    <linearGradient id="codeGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#4f46e5"/>
+      <stop offset="100%" stop-color="#0284c7"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#webGrad)"/>
+  
+  <!-- Code Editor Window Mock -->
+  <g transform="translate(60, 50)">
+    <rect width="680" height="400" rx="16" fill="#0f1422" stroke="rgba(99, 102, 241, 0.35)" stroke-width="2"/>
+    
+    <!-- Top Window bar -->
+    <rect width="680" height="46" rx="16" fill="#1e2238"/>
+    <circle cx="28" cy="23" r="6" fill="#ef4444"/>
+    <circle cx="48" cy="23" r="6" fill="#f59e0b"/>
+    <circle cx="68" cy="23" r="6" fill="#10b981"/>
+    
+    <!-- File tabs -->
+    <rect x="95" y="8" width="110" height="38" rx="8" fill="#0f1422"/>
+    <text x="150" y="32" fill="#38bdf8" font-family="'Outfit', sans-serif" font-weight="600" font-size="12" text-anchor="middle">index.html</text>
+    
+    <rect x="215" y="8" width="100" height="38" rx="8" fill="#1e2238" opacity="0.6"/>
+    <text x="265" y="32" fill="#94a3b8" font-family="'Outfit', sans-serif" font-weight="600" font-size="12" text-anchor="middle">style.css</text>
+
+    <rect x="325" y="8" width="95" height="38" rx="8" fill="#1e2238" opacity="0.6"/>
+    <text x="372" y="32" fill="#facc15" font-family="'Outfit', sans-serif" font-weight="600" font-size="12" text-anchor="middle">app.js</text>
+
+    <!-- Code Area -->
+    <g transform="translate(30, 75)" font-family="'Consolas', monospace" font-size="14">
+      <text x="0" y="25" fill="#f43f5e">&lt;!DOCTYPE html&gt;</text>
+      <text x="0" y="55" fill="#38bdf8">&lt;html <tspan fill="#f59e0b">lang</tspan>=<tspan fill="#a7f3d0">"en"</tspan>&gt;</text>
+      <text x="20" y="85" fill="#38bdf8">&lt;head&gt; <tspan fill="#94a3b8">&lt;!-- Modern Web Frontend --&gt;</tspan>&lt;/head&gt;</text>
+      <text x="20" y="115" fill="#38bdf8">&lt;body&gt;</text>
+      <text x="40" y="145" fill="#e2e8f0">&lt;<tspan fill="#f43f5e">div</tspan> <tspan fill="#f59e0b">class</tspan>=<tspan fill="#a7f3d0">"interactive-card"</tspan>&gt;</text>
+      <text x="60" y="175" fill="#6366f1">const <tspan fill="#facc15">renderUI</tspan> = () =&gt; { <tspan fill="#10b981">/* JavaScript DOM Logic */</tspan> };</text>
+      <text x="60" y="205" fill="#38bdf8">display: <tspan fill="#f59e0b">grid</tspan>; <tspan fill="#cbd5e1">gap: </tspan><tspan fill="#f43f5e">1.5rem</tspan>; <tspan fill="#94a3b8">/* Modern CSS */</tspan></text>
+      <text x="40" y="235" fill="#e2e8f0">&lt;/<tspan fill="#f43f5e">div</tspan>&gt;</text>
+      <text x="20" y="265" fill="#38bdf8">&lt;/body&gt;</text>
+      <text x="0" y="295" fill="#38bdf8">&lt;/html&gt;</text>
+    </g>
+
+    <!-- Floating Badges in Preview -->
+    <g transform="translate(480, 260)">
+      <rect width="160" height="42" rx="10" fill="#e34f26" opacity="0.95"/>
+      <text x="80" y="26" fill="#fff" font-family="'Outfit', sans-serif" font-weight="700" font-size="14" text-anchor="middle">HTML5 Markup</text>
+    </g>
+    <g transform="translate(480, 205)">
+      <rect width="160" height="42" rx="10" fill="#1572b6" opacity="0.95"/>
+      <text x="80" y="26" fill="#fff" font-family="'Outfit', sans-serif" font-weight="700" font-size="14" text-anchor="middle">CSS3 Responsive</text>
+    </g>
+    <g transform="translate(480, 150)">
+      <rect width="160" height="42" rx="10" fill="#f7df1e" opacity="0.95"/>
+      <text x="80" y="26" fill="#000" font-family="'Outfit', sans-serif" font-weight="700" font-size="14" text-anchor="middle">JavaScript ES6+</text>
+    </g>
+  </g>
+</svg>
