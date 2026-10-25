@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="ytGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1f0f15"/>
+      <stop offset="100%" stop-color="#36131c"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#ytGrad)"/>
+  <g transform="translate(90, 80)">
+    <rect width="620" height="340" rx="16" fill="#140a0e" stroke="#ff0033" stroke-width="2"/>
+    <!-- Red Play Banner -->
+    <rect x="250" y="70" width="120" height="85" rx="20" fill="#ff0000"/>
+    <polygon points="295,95 295,130 330,112" fill="#ffffff"/>
+    
+    <text x="310" y="210" fill="#ffffff" font-family="'Outfit', sans-serif" font-weight="700" font-size="28" text-anchor="middle">Long-Form YouTube Video Editing</text>
+    <text x="310" y="245" fill="#fca5a5" font-family="'Plus Jakarta Sans', sans-serif" font-size="16" text-anchor="middle">Multi-Cam Sync, Chapters, Sound Effects &amp; Color Grading</text>
+
+    <g transform="translate(110, 280)">
+      <rect width="400" height="12" rx="6" fill="#374151"/>
+      <rect width="260" height="12" rx="6" fill="#ff0000"/>
+      <circle cx="260" cy="6" r="10" fill="#ffffff"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="dbGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a1f18"/>
+      <stop offset="100%" stop-color="#11362b"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#dbGrad)"/>
+  <g transform="translate(90, 70)">
+    <rect width="620" height="360" rx="16" fill="#0d241d" stroke="#10b981" stroke-width="2"/>
+    <text x="310" y="55" fill="#34d399" font-family="'Outfit', sans-serif" font-weight="700" font-size="28" text-anchor="middle">Databases &amp; MS Excel Formulas</text>
+    
+    <!-- Spreadsheet Grid Mock -->
+    <g transform="translate(60, 90)">
+      <rect width="500" height="40" fill="#154a3b"/>
+      <text x="30" y="26" fill="#fff" font-family="'Outfit', sans-serif" font-weight="600" font-size="14">Roll No</text>
+      <text x="140" y="26" fill="#fff" font-family="'Outfit', sans-serif" font-weight="600" font-size="14">Student Name</text>
+      <text x="280" y="26" fill="#fff" font-family="'Outfit', sans-serif" font-weight="600" font-size="14">CS Theory</text>
+      <text x="400" y="26" fill="#fff" font-family="'Outfit', sans-serif" font-weight="600" font-size="14">Grade</text>
+      
+      <rect y="45" width="500" height="35" fill="#0f3328"/>
+      <text x="30" y="68" fill="#cbd5e1" font-family="'Plus Jakarta Sans', sans-serif" font-size="13">101</text>
+      <text x="140" y="68" fill="#cbd5e1" font-family="'Plus Jakarta Sans', sans-serif" font-size="13">Ahmed Raza</text>
+      <text x="280" y="68" fill="#34d399" font-family="'Plus Jakarta Sans', sans-serif" font-size="13">94 / 100</text>
+      <text x="400" y="68" fill="#34d399" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700" font-size="13">A+</text>
+
+      <rect y="85" width="500" height="35" fill="#133d31"/>
+      <text x="30" y="108" fill="#cbd5e1" font-family="'Plus Jakarta Sans', sans-serif" font-size="13">102</text>
+      <text x="140" y="108" fill="#cbd5e1" font-family="'Plus Jakarta Sans', sans-serif" font-size="13">Sara Khan</text>
+      <text x="280" y="108" fill="#34d399" font-family="'Plus Jakarta Sans', sans-serif" font-size="13">89 / 100</text>
+      <text x="400" y="108" fill="#34d399" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700" font-size="13">A</text>
+
+      <rect y="125" width="500" height="35" fill="#0f3328"/>
+      <text x="30" y="148" fill="#cbd5e1" font-family="'Plus Jakarta Sans', sans-serif" font-size="13">103</text>
+      <text x="140" y="148" fill="#cbd5e1" font-family="'Plus Jakarta Sans', sans-serif" font-size="13">Zeeshan Ali</text>
+      <text x="280" y="148" fill="#34d399" font-family="'Plus Jakarta Sans', sans-serif" font-size="13">96 / 100</text>
+      <text x="400" y="148" fill="#34d399" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700" font-size="13">A+</text>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 720" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0c111d"/>
+      <stop offset="50%" stop-color="#141c2e"/>
+      <stop offset="100%" stop-color="#080b12"/>
+    </linearGradient>
+    <linearGradient id="glowAccent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff6b35"/>
+      <stop offset="100%" stop-color="#00d2ff"/>
+    </linearGradient>
+    <linearGradient id="avatarGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <filter id="glowFilter" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="30" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="600" height="720" fill="url(#bgGrad)"/>
+
+  <!-- Cinematic Ambient Halo -->
+  <circle cx="300" cy="300" r="180" fill="#ff6b35" opacity="0.18" filter="url(#glowFilter)"/>
+  <circle cx="360" cy="360" r="160" fill="#00d2ff" opacity="0.14" filter="url(#glowFilter)"/>
+
+  <!-- Tech Grid Geometry -->
+  <g stroke="rgba(255, 255, 255, 0.05)" stroke-width="1">
+    <line x1="60" y1="0" x2="60" y2="720"/>
+    <line x1="180" y1="0" x2="180" y2="720"/>
+    <line x1="300" y1="0" x2="300" y2="720"/>
+    <line x1="420" y1="0" x2="420" y2="720"/>
+    <line x1="540" y1="0" x2="540" y2="720"/>
+    <line x1="0" y1="120" x2="600" y2="120"/>
+    <line x1="0" y1="260" x2="600" y2="260"/>
+    <line x1="0" y1="400" x2="600" y2="400"/>
+    <line x1="0" y1="540" x2="600" y2="540"/>
+  </g>
+
+  <!-- Geometric Frame -->
+  <rect x="50" y="50" width="500" height="620" rx="30" fill="none" stroke="url(#glowAccent)" stroke-width="2" opacity="0.5"/>
+
+  <!-- Professional Avatar Silhouette -->
+  <!-- Shoulders -->
+  <path d="M 170 650 C 170 510, 220 450, 300 450 C 380 450, 430 510, 430 650 Z" fill="url(#avatarGrad)" stroke="rgba(255,255,255,0.1)" stroke-width="2"/>
+  <!-- Collar / Tie Accent -->
+  <path d="M 270 455 L 300 520 L 330 455 Z" fill="#ff6b35" opacity="0.8"/>
+  <path d="M 290 520 L 300 630 L 310 520 Z" fill="#00d2ff" opacity="0.8"/>
+
+  <!-- Head -->
+  <circle cx="300" cy="310" r="105" fill="url(#avatarGrad)" stroke="url(#glowAccent)" stroke-width="2.5"/>
+  <!-- Modern Hairline -->
+  <path d="M 205 300 C 205 210, 270 190, 300 190 C 340 190, 395 210, 395 300 C 380 250, 340 230, 300 230 C 260 230, 220 250, 205 300 Z" fill="#0f172a"/>
+
+  <!-- Glasses / Modern Educator Aesthetic -->
+  <g stroke="url(#glowAccent)" stroke-width="3" fill="rgba(0, 210, 255, 0.1)">
+    <rect x="235" y="280" width="55" height="42" rx="10"/>
+    <rect x="310" y="280" width="55" height="42" rx="10"/>
+    <line x1="290" y1="300" x2="310" y2="300"/>
+  </g>
+
+  <!-- Friendly Smile & Details -->
+  <path d="M 275 365 Q 300 385 325 365" stroke="#94a3b8" stroke-width="3" fill="none" stroke-linecap="round"/>
+
+  <!-- Creative Badges Embedded -->
+  <!-- Video Editing Premiere Pro Icon -->
+  <g transform="translate(80, 520)">
+    <rect width="80" height="80" rx="18" fill="#00005b" stroke="#3b82f6" stroke-width="2"/>
+    <text x="40" y="52" fill="#9999ff" font-family="'Outfit', sans-serif" font-weight="800" font-size="34" text-anchor="middle">Pr</text>
+  </g>
+
+  <!-- Computer Science Code Badge -->
+  <g transform="translate(440, 520)">
+    <rect width="80" height="80" rx="18" fill="#1e293b" stroke="#ff6b35" stroke-width="2"/>
+    <text x="40" y="50" fill="#ff6b35" font-family="'Outfit', sans-serif" font-weight="800" font-size="28" text-anchor="middle">&lt;/&gt;</text>
+  </g>
+
+  <!-- Name & Verification Tag in Image -->
+  <g transform="translate(300, 660)">
+    <text x="0" y="0" fill="#ffffff" font-family="'Outfit', sans-serif" font-weight="700" font-size="20" text-anchor="middle" letter-spacing="2">ABDUL RAFAY SHAIKH</text>
+    <text x="0" y="24" fill="#00d2ff" font-family="'Plus Jakarta Sans', sans-serif" font-weight="600" font-size="13" text-anchor="middle">GCUH IT SCHOLAR &amp; CS EDUCATOR</text>
+  </g>
+</svg>

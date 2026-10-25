@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="charcoal-orange">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Awards & Achievements | Abdul Rafay Shaikh</title>
+  <meta name="description" content="Academic honors, teaching recognitions, and creative milestones achieved by Abdul Rafay Shaikh.">
+  
+  <link rel="icon" type="image/svg+xml" href="assets/profile.svg">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Ambient Glowing Blurred Gradient Layers -->
+  <div class="ambient-glow-layer">
+    <div class="glow-orb glow-orb-1"></div>
+    <div class="glow-orb glow-orb-2"></div>
+    <div class="glow-orb glow-orb-3"></div>
+  </div>
+
+  <!-- Navigation -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo">
+        <span class="brand-badge-symbol">R</span>
+        <div>
+          <span data-cms="profile.name">Abdul Rafay Shaikh</span>
+        </div>
+      </a>
+
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="services.html" class="nav-link">Services</a></li>
+          <li><a href="awards.html" class="nav-link active">Achievements</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="admin.html" class="admin-nav-pill">
+          <i class="fa-solid fa-lock"></i> Admin
+        </a>
+        <button class="mobile-toggle" aria-label="Toggle Navigation">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Page Header -->
+  <section class="section" style="padding-top: 8rem; padding-bottom: 2rem;">
+    <div class="container">
+      <div class="section-title-wrap reveal">
+        <span class="section-badge"><i class="fa-solid fa-trophy"></i> Recognition &amp; Honors</span>
+        <h1 class="section-title">Awards &amp; Milestones</h1>
+        <p class="section-subtitle">
+          Acknowledging academic consistency at GCUH, innovative curriculum design for secondary education, and creative excellence in video editing.
+        </p>
+      </div>
+
+      <!-- Awards Grid (Dynamically rendered and editable via Admin Panel) -->
+      <div class="awards-grid" id="dynamic-awards-grid">
+        <!-- Rendered dynamically by js/main.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Certifications & Credentials Grid -->
+  <section class="section" style="background: rgba(0,0,0,0.25);">
+    <div class="container">
+      <div class="section-title-wrap reveal">
+        <span class="section-badge"><i class="fa-solid fa-medal"></i> Credentials</span>
+        <h2 class="section-title">Academic &amp; Technical Qualifications</h2>
+        <p class="section-subtitle">
+          Key certifications and academic coursework in progress.
+        </p>
+      </div>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+        
+        <div class="award-card reveal">
+          <div class="award-badge-icon" style="background: rgba(0,210,255,0.15); color: var(--accent-secondary);">
+            <i class="fa-solid fa-graduation-cap"></i>
+          </div>
+          <span class="award-year">In Progress (2nd Year)</span>
+          <h3 class="award-title">BS in Information Technology</h3>
+          <p class="award-organization"><i class="fa-solid fa-building-columns"></i> Government College University, Hyderabad (GCUH)</p>
+          <p class="award-desc">
+            Core subjects include Computer Fundamentals, Networking Topologies, Database Modeling, C Programming, and Discrete Structures.
+          </p>
+        </div>
+
+        <div class="award-card reveal reveal-delay-1">
+          <div class="award-badge-icon" style="background: rgba(255,107,53,0.15); color: var(--accent-primary);">
+            <i class="fa-solid fa-photo-film"></i>
+          </div>
+          <span class="award-year">Mastery Level</span>
+          <h3 class="award-title">Adobe Premiere Pro Post-Production</h3>
+          <p class="award-organization"><i class="fa-solid fa-video"></i> Digital Media Practice</p>
+          <p class="award-desc">
+            Proficient in multi-cam sync, color grading with Lumetri scopes, dynamic transitions, audio mastering, and export optimization for web.
+          </p>
+        </div>
+
+        <div class="award-card reveal reveal-delay-2">
+          <div class="award-badge-icon" style="background: rgba(16,185,129,0.15); color: #10b981;">
+            <i class="fa-solid fa-chalkboard"></i>
+          </div>
+          <span class="award-year">Verified Practice</span>
+          <h3 class="award-title">ICT-Integrated Classroom Instruction</h3>
+          <p class="award-organization"><i class="fa-solid fa-laptop"></i> Virtual Learning Circle</p>
+          <p class="award-desc">
+            Skilled in instructional design using Google Classroom, Zoom breakout rooms, digital whiteboards, and interactive formative quizzes.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section">
+    <div class="container">
+      <div class="cta-banner reveal">
+        <h2>Want to verify credentials or request reference letters?</h2>
+        <p>Academic transcripts, sample lesson sheets, and project portfolios are gladly provided upon request.</p>
+        <a href="contact.html" class="btn btn-primary">
+          <i class="fa-regular fa-paper-plane"></i>
+          <span>Contact for Verification</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="brand-logo">
+            <span class="brand-badge-symbol">R</span>
+            <span data-cms="profile.name">Abdul Rafay Shaikh</span>
+          </a>
+          <p>Computer Science Educator &amp; Premiere Pro Video Editor based in Hyderabad, Pakistan.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="awards.html">Achievements</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Academic Base</h4>
+          <ul class="footer-links">
+            <li><a href="https://gcuh.edu.pk" target="_blank">GCUH Hyderabad</a></li>
+            <li><a href="about.html">BS-IT Curriculum</a></li>
+            <li><a href="services.html">Grade 9 Syllabus</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Admin Portal</h4>
+          <ul class="footer-links">
+            <li><a href="admin.html"><i class="fa-solid fa-gear"></i> Update Achievements</a></li>
+            <li><a href="mailto:shaikhabdulrafay815@gmail.com"><i class="fa-solid fa-envelope"></i> Email Rafay</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Abdul Rafay Shaikh. All rights reserved.</p>
+        <p>Achievements Page</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

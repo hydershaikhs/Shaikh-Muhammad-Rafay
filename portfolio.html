@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="charcoal-orange">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio & Showcase | Abdul Rafay Shaikh</title>
+  <meta name="description" content="Explore computer science instructional materials, curriculum lessons, and Adobe Premiere Pro video edits by Abdul Rafay Shaikh.">
+  
+  <link rel="icon" type="image/svg+xml" href="assets/profile.svg">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Ambient Glowing Blurred Gradient Layers -->
+  <div class="ambient-glow-layer">
+    <div class="glow-orb glow-orb-1"></div>
+    <div class="glow-orb glow-orb-2"></div>
+    <div class="glow-orb glow-orb-3"></div>
+  </div>
+
+  <!-- Navigation -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo">
+        <span class="brand-badge-symbol">R</span>
+        <div>
+          <span data-cms="profile.name">Abdul Rafay Shaikh</span>
+        </div>
+      </a>
+
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="portfolio.html" class="nav-link active">Portfolio</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="services.html" class="nav-link">Services</a></li>
+          <li><a href="awards.html" class="nav-link">Achievements</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="admin.html" class="admin-nav-pill">
+          <i class="fa-solid fa-lock"></i> Admin
+        </a>
+        <button class="mobile-toggle" aria-label="Toggle Navigation">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Page Header -->
+  <section class="section" style="padding-top: 8rem; padding-bottom: 2rem;">
+    <div class="container">
+      <div class="section-title-wrap reveal">
+        <span class="section-badge"><i class="fa-solid fa-folder-open"></i> Work Showcase</span>
+        <h1 class="section-title">Portfolio &amp; Selected Projects</h1>
+        <p class="section-subtitle">
+          Curated work spanning Grade 9 Computer Science teaching materials, past paper revision decks, and high-energy Adobe Premiere Pro video edits.
+        </p>
+      </div>
+
+      <!-- Filter Tabs -->
+      <div class="portfolio-filter-tabs reveal">
+        <button class="filter-tab active" data-filter="all">All Projects</button>
+        <button class="filter-tab" data-filter="cs-education">CS &amp; Educational Content</button>
+        <button class="filter-tab" data-filter="video-editing">Video Editing &amp; Reels</button>
+        <button class="filter-tab" data-filter="it-study">IT Projects &amp; Notes</button>
+      </div>
+
+      <!-- Dynamic Portfolio Grid -->
+      <div class="portfolio-grid" id="full-portfolio-grid">
+        <!-- Rendered dynamically by js/main.js from data.js / CMS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Banner -->
+  <section class="section">
+    <div class="container">
+      <div class="cta-banner reveal">
+        <h2>Have a custom project or tutoring requirement?</h2>
+        <p>I can tailor lesson plans for your institution or produce custom video edits for your YouTube channel or business.</p>
+        <a href="contact.html" class="btn btn-primary">
+          <i class="fa-solid fa-comments"></i>
+          <span>Discuss Your Needs</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="brand-logo">
+            <span class="brand-badge-symbol">R</span>
+            <span data-cms="profile.name">Abdul Rafay Shaikh</span>
+          </a>
+          <p>Computer Science Educator &amp; Premiere Pro Video Editor based in Hyderabad, Sindh, Pakistan.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="about.html">About Story</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="awards.html">Achievements</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Filter Categories</h4>
+          <ul class="footer-links">
+            <li><a href="#full-portfolio-grid">Grade 9 CS Lessons</a></li>
+            <li><a href="#full-portfolio-grid">Premiere Pro Reels</a></li>
+            <li><a href="#full-portfolio-grid">YouTube Long-Form</a></li>
+            <li><a href="#full-portfolio-grid">Excel &amp; Database Notes</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Direct Touch</h4>
+          <ul class="footer-links">
+            <li><a href="mailto:shaikhabdulrafay815@gmail.com" data-cms="profile.email"><i class="fa-solid fa-envelope"></i> shaikhabdulrafay815@gmail.com</a></li>
+            <li><a href="tel:+923111267926" data-cms="profile.phone"><i class="fa-solid fa-phone"></i> +92 311 1267926</a></li>
+            <li><a href="admin.html"><i class="fa-solid fa-lock"></i> Admin Portal</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Abdul Rafay Shaikh. All rights reserved.</p>
+        <p>Portfolio Showcase</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Lightbox Modal -->
+  <div class="lightbox-modal" id="portfolio-lightbox">
+    <div class="lightbox-content">
+      <button class="lightbox-close" aria-label="Close Preview">&times;</button>
+      <div class="lightbox-image-wrap">
+        <img src="" id="lightbox-img" alt="Project Preview">
+      </div>
+      <div class="lightbox-details">
+        <span class="lightbox-tag" id="lightbox-tag">Category</span>
+        <h3 class="lightbox-title" id="lightbox-title">Project Title</h3>
+        <p class="lightbox-desc" id="lightbox-desc">Project Description</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
