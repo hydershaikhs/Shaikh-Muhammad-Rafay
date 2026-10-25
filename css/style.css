@@ -471,13 +471,13 @@ button, input, textarea, select {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: -3rem; /* Lifted image card higher */
+  margin-top: -5.5rem; /* Lifted image card noticeably higher */
 }
 
 .profile-card-wrapper {
   position: relative;
   width: 100%;
-  max-width: 380px;
+  max-width: 370px;
   border-radius: 26px;
   padding: 8px;
   background: linear-gradient(145deg, rgba(79, 70, 229, 0.12), rgba(2, 132, 199, 0.08));
@@ -507,13 +507,14 @@ button, input, textarea, select {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center 0%; /* Lifted portrait photo higher to frame face perfectly */
+  object-position: center 0%;
+  transform: scale(1.14) translateY(-14px); /* Shifts photo inside the frame higher to clearly show upper body and face */
   display: block;
   transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .profile-card-wrapper:hover .profile-image-container img {
-  transform: scale(1.04);
+  transform: scale(1.18) translateY(-16px);
 }
 
 .hero-photo-tag {
